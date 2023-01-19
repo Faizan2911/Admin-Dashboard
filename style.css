@@ -198,6 +198,7 @@ aside .menu-bar a{
 
 aside .menu-bar a span{
     font-size: 1.6rem;
+    transition: all 300ms ease;
 }
 
 aside .menu-bar a:last-child{
@@ -206,6 +207,32 @@ aside .menu-bar a:last-child{
     width: 100%;
 }
 
+aside .menu-bar a.active{
+      background: var(--color-light);
+      color: var(--color-primary);
+      margin-left: 0;
+}
 
+aside .menu-bar a.active:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+    
+}
+
+
+aside .menu-bar a.active span {
+     color: var(--color-primary);
+     margin-left: 3px;
+}
+
+aside .menu-bar a:hover {
+      color: var(--color-primary);
+}
+
+aside .menu-bar a:hover  span {
+    margin-left: 1rem;
+}
 
 
